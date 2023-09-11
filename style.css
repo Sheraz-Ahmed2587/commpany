@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html{
+    font-size: 70%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ...................... STYLING NAV-BAR......................... */
+
+.nav-bar{
+    background: #111;
+    color: #fff;
+    height: 7rem;
+    opacity: 0.8;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.list-items{
+    display: flex;
+    margin-right: 12rem;
+}
+.list-items li {
+    list-style: none;
+    margin-left: 10px;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.nav-bar a:hover {
+    color: #117964;
+    border: 2px solid yellowgreen;
+    background-color: #aaa;
+    border-radius: 25px;
+}
+
+.logo{
+    background-image: url(images/Red_Marketing_Logo.png);
+    background-size: cover;
+    height: 60px;
+    width: 150px;
+    align-items: center;
+    display: flex;
+}
+.logo-p {
+    margin-left: 125px;
+    color: #DC143C;;
+    font-weight: bold; 
+    font-size: 2rem;
+}
+
+/* ...................... HOME PAGE......................... */
+
+.showcase-area{
+    height: 90vh;
+    background-image: url(images/home.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+/* Style for .home-h1 and .home-p1 */
+.home-h1 {
+    margin: 25px 10px;
+    font-size: 3rem;
+    color: #000;
+}
+.home-p1 {
+    margin: 12px 0;
+    font-size: 1.5rem;
+    color: whitesmoke; 
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn-primary{
+    color: #fff;
+    background: orangered;
+}
+.btn-primary:hover{
+    background: orange;
+}
+
+
+/* ...................... Services Page......................... */
+
+.our-services{
+    background-color: rgb(245, 245, 247);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.service-h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.icon-1{
+    font-size: 6rem;
+    color: #000; 
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.circle-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 220px; /* Adjust the height as needed */
+}
+.service-description {
+    font-size: 1.5rem; 
+    font-weight: 600;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+ }
+.service-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.service-items2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+
+/* ...................... About Us......................... */
+
+
+#about {
+    background-image: url(images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh; /* Set a minimum height to cover the viewport */
+    width: 100%;
+    text-align: center;
+}
+
+.about-h1{
+    font-size: 3rem;
+    color: rgb(108, 42, 42);
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-decoration: underline;
+}
+.about-p{
+    color: #fff;
+    padding: 75px 250px;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ...................... Our Team......................... */
+
+
+#testimonial{
+    padding: 5rem 0;
+    background-color: rgb(243, 243, 243);
+}
+.testimonial-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #555;
+}
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+.testimonial-box .checked{
+    color: #ff9529;
+}
+.testimonial-box .testimonial-text{
+    margin: 1rem 0;
+    color: #444;
+}
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
+.customer-photo img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
+/* ...................... Contact......................... */
+
+#contact{
+    padding: 5rem 0;
+    background-color: rgb(226, 226, 226);
+}
+.contact-container{
+    display: flex;
+    background-color: #fff;
+}
+.contact-image{
+    width: 50%;
+}
+.contact-image img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+.form-container input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+.form-container textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+}
+.form-container h2{
+    font-size: 3rem;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 1rem;
+}
+.form-container a{
+    font-size: 1.2rem;
+}
+
+
+/* ...................... footer......................... */
+
+#footer{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    color: #fff;
+    background-color: rgb(65, 65, 65);
+}
+
+
+
+
+
+
+
+
+
+
+
+
